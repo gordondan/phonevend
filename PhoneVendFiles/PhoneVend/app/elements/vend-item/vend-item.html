@@ -1,0 +1,43 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="stylesheet" href="vend-item.css">
+
+<dom-module id="vend-item">
+  <template>
+    <style include="shared-styles"></style>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <div>
+    <paper-material elevation="2">
+    <img class="vend-item-icon" src="images/items/item-icons/{{item_image_name}}" width="60px"/>
+    <div class="vend-item-title">
+        <p >{{item_name}}</p>
+    </div>
+    </paper-material>
+    </div>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'vend-item',
+
+        properties: {
+          item_name: {
+            type: String,
+            value: 'Welcome!'
+          },
+          item_image_name: {
+            type: String,
+            value: 'image.jpg'
+          }
+        }
+      });
+    })();
+  </script>
+
+</dom-module>

@@ -1,0 +1,65 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="vend-machine">
+  <template>
+    <style include="shared-styles"></style>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <h3>{{machinename}}</h3>
+    <table cellpadding="10px">
+      <tr valign="bottom">
+        <td>
+          <vend-item item_name="Snickers" item_image_name="Snickers.JPG" price="50"></vend-item>
+        </td>
+        <td>
+          <vend-item item_name="Twix" item_image_name="Twix.JPG" price="50"> </vend-item>
+        </td>
+        <td>
+          <vend-item item_name="Lays Potato Chips" item_image_name="Lays.JPG" price="60"></vend-item>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <vend-item item_name="Peanut M&M's" item_image_name="m_and_m_peanuts.JPG" price="50"></vend-item>
+        </td><td>
+        <vend-item item_name="Plain M&M's" item_image_name="m_and_m_plain.JPG" price="50"></vend-item>
+      </td>
+        <td>
+          <vend-item item_name="Runts" item_image_name="Runts.JPG" price="50"></vend-item>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <vend-item item_name="Doritos Nacho" item_image_name="Doritos_Nacho.JPG" price="40"> </vend-item>
+        </td>
+      <td>
+        <vend-item item_name="Doritos Cool Ranch" item_image_name="Doritos_Cool_Ranch.JPG" price="40"></vend-item>
+      </td><td>
+        <vend-item item_name="Pop Tart" item_image_name="PopTarts.JPG" price="75"></vend-item>
+      </td>
+    </tr>
+      </table>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'vend-machine',
+
+        properties: {
+          machinename: {
+            type: String,
+            value: "Dan's vending machine"
+          }
+        }
+      });
+    })();
+  </script>
+
+</dom-module>

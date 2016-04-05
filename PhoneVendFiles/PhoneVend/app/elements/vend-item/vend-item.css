@@ -1,0 +1,22 @@
+.vend-item-title{
+  background: black;
+  width: 65px;
+  height: 30px;
+  color: white;
+  font-size: 9pt;
+  text-valign: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.vend-item-icon{
+  width: 65px;
+}
+
+table {
+  cellpadding: 10px;
+}
+
+tr {
+  valign: 'bottom'
+}
